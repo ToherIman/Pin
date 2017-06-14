@@ -1,0 +1,31 @@
+<template name="site">
+  <div class="site {{#if private}}private{{/if}}">
+    {{#if isOwner}}
+      <button class="toggle-private">
+        {{#if private}}
+          Private
+            {{else}}
+          Public
+        {{/if}}
+      </button>
+      <i class="fa fa-times delete" aria-hidden="true"></i>
+      <i class="fa fa-pencil edit"></i>
+      {{/if}}
+    
+      <div class="embedly">
+        <a href="{{text}}" class="embedly-card"></a>
+      </div>
+      
+
+
+      <a class="likeCounter">{{likeCounter}}</a>
+      <button type="button" class="jsLikeButton" data-id="{{_id}}">Like!</button>
+      {{#if editMode}}
+        {{> quickForm collection="Sites" id=updateSiteId type="update" doc=this autosave=true fields="text, tag" omitFields="likers, likes"}}
+      {{else}}
+      <span class="text"><strong>{{username}}</strong></span>
+      <h3 class="tag">{{tag}}</h3>
+      {{/if}}
+
+  </div>
+</template>

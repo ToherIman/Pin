@@ -1,0 +1,31 @@
+<body>
+    <div class="hd">
+        <div class="name">
+            PinS
+        </div>
+
+        {{> loginButtons}} <a>         {{sitesCount}} - <a>Total Pins</a></a>
+
+        <button class="inputMenu">+</button>
+
+        <div class="listOfTags">
+            {{#each tag in listOfTags}}
+            <a class="tag {{#if chosen}}chosen{{/if}}">
+        #{{tag}}
+      </a> {{/each}}
+        </div>
+
+        {{#if inputIs}} {{>fileInput}} {{> input}} {{else}}
+        <div class="container search">
+            {{#each searchResults}} {{> site}} {{/each}}
+        </div>
+        {{/if}}
+    </div>
+
+
+    <div class="container">
+        {{#each sites}} {{> site}} {{/each}}
+    </div>
+
+
+</body>

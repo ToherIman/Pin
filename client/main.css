@@ -1,0 +1,176 @@
+@import "{}/node_modules/bootstrap/dist/css/bootstrap.css";
+.emb {
+    width: 300px;
+    height: 100px;
+    background-color: deepskyblue;
+}
+
+.listOfTags {
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.likeCounter {
+    float: right;
+}
+
+.selectedTag {
+    color: red;
+}
+
+.inputMenu {
+    float: right;
+    background-color: #CDDC39;
+    margin: 0px 0px 0px 0px;
+}
+
+.chosen {
+    color: red;
+}
+
+.jsLikeButton {
+    float: right;
+    background-color: #CDDC39;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.search {
+    background-color: #B3E5FC;
+    margin: 10px;
+}
+
+.hd {
+    width: 100%;
+    background-color: #0288D1;
+    box-shadow: 0px 3px 0px 0px #2980B9;
+}
+
+.name {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.new-site {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+input[type="url"],
+input[type="text"] {
+    height: 20px;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.site {
+    padding: 15px;
+    margin: 20px;
+    border-bottom: #eee solid 1px;
+    border: 1px solid Gainsboro;
+    background-color: white;
+    width: 250;
+    height: 350;
+}
+
+.delete,
+.edit {
+    float: right;
+    font-weight: bold;
+    background: none;
+    font-size: 1em;
+    border: none;
+    margin: 5px;
+}
+
+.site.text {
+    margin-left: 10px;
+}
+
+.site.checked {
+    color: #888;
+}
+
+.site.checked.text {
+    text-decoration: line-through;
+}
+
+.site.private {
+    background: #eee;
+    border-color: #ddd;
+}
+
+.toggle-private {
+    margin-left: 5px;
+    background-color: #3498DB;
+    color: white;
+    border-style: none;
+}
+
+@media (max-width: 600px) {
+    .site {
+        padding: 12px 15px;
+    }
+    .search {
+        width: 150px;
+        clear: both;
+    }
+    .new-task input {
+        padding-bottom: 5px;
+    }
+    .embedly-card {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+.embedly-card {
+    font-family: 'Merriweather', serif;
+    height: 250px;
+    width: 300px;
+}
+
+.card .title {
+    margin-bottom: 5px;
+}
+
+.card .action {
+    color: #fa4b2a;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    padding: 7px;
+    color: #3498DB;
+    background-color: white;
+    border: none;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.new-site-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: white;
+    padding: 10px;
+}

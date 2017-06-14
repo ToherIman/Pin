@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.delete {
+    float: right;
+    font-weight: bold;
+    background: none;
+    font-size: 1em;
+    border: none;
+    position: relative;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #6E91A1;
+    font-size: 14px;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 auto;
+    min-height: 100%;
+    background: inherit;
+
+}
+
+header {
+    background-color: #27556C;
+    border-radius: 5px;
+    padding: 20px 15px 15px 15px;
+    position: relative;
+}
+
+#login-buttons {
+    display: block;
+}
+
+.name {
+  text-align: center;
+  font-size: 2em;
+}
+form {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.new-site input {
+    box-sizing: border-box;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding-right: 80px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.new-site input:focus {
+    outline: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+}
+
+li {
+    position: relative;
+    padding: 15px;
+    margin: 5px 0px 5px 0px;
+    border-bottom: #eee solid 1px;
+    border: 1px solid Gainsboro;
+    border-radius: 5px;
+    background-color: white;
+    height: 100%;
+    width: 300px;
+}
+
+li .text {
+    margin-left: 10px;
+}
+
+li.checked {
+    color: #888;
+}
+
+li.checked .text {
+    text-decoration: line-through;
+}
+
+li.private {
+    background: #eee;
+    border-color: #ddd;
+}
+
+header .hide-completed {
+    float: right;
+}
+
+.toggle-private {
+    margin-left: 5px;
+    background-color: #113C51;
+    border-radius: 5px;
+    color: #6E91A1;
+}
+
+@media (max-width: 600px) {
+    li {
+        padding: 12px 15px;
+    }
+    .search {
+        width: 150px;
+        clear: both;
+    }
+    .new-task input {
+        padding-bottom: 5px;
+    }
+}
+
+.card {
+    font-family: 'Merriweather', serif;
+    height: 100%;
+}
+
+.card .title {
+    margin-bottom: 5px;
+}
+
+.card .action {
+    color: #fa4b2a;
+}
